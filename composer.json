@@ -1,0 +1,24 @@
+{
+    "name": "fflch/utils",
+    "description": "Métodos estáticos em PHP usado em diversos sistema na FFLCH",
+    "license" : "MIT",
+    "authors": [
+        {
+            "name": "Thiago Gomes Veríssimo",
+            "email": "verissimotgv@gmail.com"
+        }
+    ],
+    "require": {
+        "fzaninotto/faker": "^1.5",
+        "uspdev/replicado": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "FFLCH\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^8.3 || ^9.0"
+    }
+}
