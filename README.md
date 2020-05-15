@@ -1,2 +1,5 @@
 # utils
-Métodos estáticos em PHP usado em diversos sistema na FFLCH
+
+Diversos métodos estáticos em PHP para as coisas mais úteis ou inúteis...
+
+    composer require uspdev/utils
