@@ -1,6 +1,6 @@
 <?php
 
-namespace FFLCH;
+namespace Uspdev;
 
 class Utils
 {

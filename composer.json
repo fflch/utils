@@ -1,6 +1,6 @@
 {
-    "name": "fflch/utils",
-    "description": "Métodos estáticos em PHP usado em diversos sistema na FFLCH",
+    "name": "uspdev/utils",
+    "description": "Diversos métodos estáticos em PHP para as coisas mais úteis ou inúteis...",
     "license" : "MIT",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "FFLCH\\": "src/"
+            "Uspdev\\": "src/"
         }
     },
     "minimum-stability": "stable",
