@@ -5,6 +5,7 @@ php:
   - 7.3
 
 before_script:
+  - sudo apt-get php php-xml php-gd php-mbstring
   - composer self-update
   - composer install --prefer-source --no-interaction
 
