@@ -3,8 +3,8 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/uspdev/utils.svg) 
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/uspdev/utils.svg)
 
-![GitHub issues](https://img.shields.io/github/issues/uspdev/copaco.svg) 
-![GitHub closed issues](https://img.shields.io/github/issues-closed/uspdev/copaco.svg)
+![GitHub issues](https://img.shields.io/github/issues/uspdev/utils.svg) 
+![GitHub closed issues](https://img.shields.io/github/issues-closed/uspdev/utils.svg)
 
 # utils
 
