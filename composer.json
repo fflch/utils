@@ -8,9 +8,6 @@
             "email": "verissimotgv@gmail.com"
         }
     ],
-    "require": {
-        "uspdev/replicado": "^1.5"
-    },
     "minimum-stability": "stable",
     "require-dev": {
         "phpunit/phpunit": "^8.3 || ^9.0"
