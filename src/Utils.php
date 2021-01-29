@@ -27,5 +27,13 @@ class Utils
     {
        return implode('-',array_reverse(explode('/',$data)));
     }
+    
+    public static function crazyHash($n) {
+        $hash = substr( dechex( $n / 13 ), - 1 ) . dechex( $n + 2047483639 ) . substr( dechex( $n / 13 ), - 3 );
+        return strtoupper($hash);
+    }
+
+?>
+
 
 }
