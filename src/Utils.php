@@ -33,7 +33,4 @@ class Utils
         return strtoupper($hash);
     }
 
-?>
-
-
 }
