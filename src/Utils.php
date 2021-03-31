@@ -37,7 +37,7 @@ class Utils
       $result = array();
       foreach($array as $key=>$value) {
           if(is_array($value)) {
-              $result = $result + $this->flatten($value, $prefix . $key . '.');
+              $result = $result + self::flatten($value, $prefix . $key . '.');
           }
           else {
               $result[$prefix . $key] = $value;
