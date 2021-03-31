@@ -33,7 +33,7 @@ class Utils
         return strtoupper($hash);
     }
     
-    public static flatten($array, $prefix = '') {
+    public static function flatten($array, $prefix = '') {
       $result = array();
       foreach($array as $key=>$value) {
           if(is_array($value)) {
