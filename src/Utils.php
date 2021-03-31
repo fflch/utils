@@ -32,5 +32,18 @@ class Utils
         $hash = substr( dechex( $n / 13 ), - 1 ) . dechex( $n + 2047483639 ) . substr( dechex( $n / 13 ), - 3 );
         return strtoupper($hash);
     }
+    
+    public static flatten($array, $prefix = '') {
+      $result = array();
+      foreach($array as $key=>$value) {
+          if(is_array($value)) {
+              $result = $result + $this->flatten($value, $prefix . $key . '.');
+          }
+          else {
+              $result[$prefix . $key] = $value;
+          }
+      }
+      return $result;
+    }
 
 }
