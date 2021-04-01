@@ -14,12 +14,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Uspdev\\": "src/"
+            "Uspdev\\Utils": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Uspdev\\Utils\\Tests\\": "tests/"
         }
     }
 }

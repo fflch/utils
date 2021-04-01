@@ -1,11 +1,11 @@
 <?php
 
-namespace Uspdev;
+namespace Uspdev\\Utils;
 
 /**
  * Utils Class
  */
-class Utils
+class Generic
 {
     /* https://scripts.guru/partially-hide-email-address-using-php/ */
     public static function partially_email($email)
