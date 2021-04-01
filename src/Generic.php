@@ -1,6 +1,6 @@
 <?php
 
-namespace Uspdev\\Utils;
+namespace Uspdev\Utils;
 
 /**
  * Utils Class
