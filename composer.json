@@ -21,5 +21,8 @@
         "psr-4": {
             "Uspdev\\Utils\\Tests\\": "tests/"
         }
+    },
+    "require": {
+        "nesbot/carbon": "^2.48"
     }
 }
