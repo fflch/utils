@@ -108,5 +108,29 @@ class Generic
 
         return $text;
     }
+    
+    # http://technologyordie.com/php-mac-address-validation
+    # cisco: 0012:2356:7890
+    # - : 00-12-23-56-78-90
+    # linux: 00:12:23:56:78:90
+    # ? 00?12?23?56?78?90
+    public static function format_mac($mac, $format='linux'){
+     
+	    $mac = preg_replace("/[^a-fA-F0-9]/",'',$mac);
+     
+	    $mac = (str_split($mac,2));
+	    if(!(count($mac) == 6))
+		    return false;
+     
+	    if($format == 'linux' || $format == ':'){
+		    return $mac[0]. ":" . $mac[1] . ":" . $mac[2]. ":" . $mac[3] . ":" . $mac[4]. ":" . $mac[5];
+	    }elseif($format == 'windows' || $format == '-'){
+		    return $mac[0]. "-" . $mac[1] . "-" . $mac[2]. "-" . $mac[3] . "-" . $mac[4]. "-" . $mac[5];
+	    }elseif($format == 'cisco'){
+		    return $mac[0] . $mac[1] . ":" . $mac[2] . $mac[3] . ":" . $mac[4] . $mac[5];
+	    }else{
+		    return $mac[0]. "$format" . $mac[1] . "$format" . $mac[2]. "$format" . $mac[3] . "$format" . $mac[4]. "$format" . $mac[5];
+	    }
+    }
 
 }
