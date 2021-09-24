@@ -108,6 +108,15 @@ class Generic
 
         return $text;
     }
+	
+    public static function array_to_csv($path, $array){
+	$fp = fopen($path, 'w');
+	fputcsv($fp, array_keys($array[0]));
+	foreach ($array as $fields) {
+	    fputcsv($fp, $fields);
+	}
+	fclose($fp);
+    }
     
     # http://technologyordie.com/php-mac-address-validation
     # cisco: 0012:2356:7890
