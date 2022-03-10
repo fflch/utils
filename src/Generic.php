@@ -142,4 +142,29 @@ class Generic
 	    }
     }
 
+    /**
+     * Gera senha (string) contendo caracteres especiais, números, e letras maiúsculas e minúsculas
+     * 
+     * O tamanho mínimo são 6 caracterese máximo 255. Default = 15.
+     * 
+     * @param Int $len Tamanho da senha gerada
+     * @return String
+     * @author Masaki K Neto em 10/3/2022
+     */
+    public static function senhaAleatoria(Int $len = 15)
+    {
+        $len = ($len < 4) ? 6 : $len; // pelo menos tamanho 6
+        $len = ($len > 255) ? 255 : $len; // maxímo de 255
+        $specials = '!@#$%&*_';
+        $numbers = '0123456789';
+        $lowers = 'abcdefghijklmnopqrstuvwxyz';
+        $uppers = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        return str_shuffle(
+            substr(str_shuffle($specials), 0, 2)
+            . substr(str_shuffle($numbers), 0, 2)
+            . substr(str_shuffle($uppers), 0, intval(($len - 4) / 2))
+            . substr(str_shuffle($lowers), 0, $len - 4 - intval(($len - 4) / 2))
+        );
+    }
 }
